@@ -34,7 +34,7 @@ A *type* of the message can be 'read', 'write', 'subscribe', 'unsubscribe', 'pro
 {
     "type": "process",
     "id": 123,
-    "timestamp": 1213232323232
+    "timestamp": 1213232323232,
     "thing_id": "323123123",
     "payload": [
         {
@@ -57,7 +57,7 @@ A *type* of the message can be 'read', 'write', 'subscribe', 'unsubscribe', 'pro
 {
     "type": "alert",
     "id": 123,
-    "timestamp": 1213232323232
+    "timestamp": 1213232323232,
     "thing_id": "323123123",
     "payload": [
         {
@@ -81,7 +81,7 @@ A *type* of the message can be 'read', 'write', 'subscribe', 'unsubscribe', 'pro
 {
     "type": "status",
     "id": 123,
-    "timestamp": 1213232323232
+    "timestamp": 1213232323232,
     "thing_id": "323123123",
     "payload": [
         {
