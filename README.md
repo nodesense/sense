@@ -99,4 +99,24 @@ A *type* of the message can be 'read', 'write', 'subscribe', 'unsubscribe', 'pro
     ]
 }
 ```
+
+## Read Data on demand
+```json
+{
+    "type": "read",
+    "id": 123,
+    "device_id": "323123123",
+    "items": [
+        {
+            "name": "flowrate"
+        },
+        {
+            "name": "temperature"
+        },
+        {
+            "name": "pressure"
+        }
+    ]
+}
+```
  
