@@ -126,6 +126,7 @@ A *type* of the message can be 'read', 'write', 'subscribe', 'unsubscribe', 'pro
 {
     "type": "read-response",
     "id": 123,
+    "reply_id": 12324343,
     "device_id": "323123123",
     "values": [
         {
