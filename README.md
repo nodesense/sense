@@ -144,3 +144,44 @@ A *type* of the message can be 'read', 'write', 'subscribe', 'unsubscribe', 'pro
     ]
 }
 ```
+
+
+## Write Data on demand
+```json
+{
+    "type": "write",
+    "id": 123,
+    "device_id": "323123123",
+    "values": [
+        {
+            "name": "flowrate",
+            "value": 324
+        },
+        {
+            "name": "temperature",
+            "value": 34
+        }
+    ]
+}
+```
+ 
+
+## Read Response for the ReadDataRequest
+```json
+{
+    "type": "write-response",
+    "id": 123,
+    "reply_id": 12324343,
+    "device_id": "323123123",
+    "results": [
+        {
+            "name": "flowrate",
+            "status": 1
+        },
+        {
+            "name": "temperature",
+            "status": 1
+        }
+    ]
+}
+```
