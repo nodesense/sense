@@ -62,12 +62,17 @@ A *type* of the message can be 'read', 'write', 'subscribe', 'unsubscribe', 'pro
     "values": [
         {
             "name": "high_temp",
-            "value": true,
+            "value": 1,
             "ack": 1
         },
         {
+            "name": "low_limit",
+            "value": 1,
+            "ack": 0
+        },
+        {
             "name": "low_fuel",
-            "value": false,
+            "value": 0,
             "ack": 0
         }
     ]
