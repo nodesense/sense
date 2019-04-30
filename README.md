@@ -36,7 +36,7 @@ A *type* of the message can be 'read', 'write', 'subscribe', 'unsubscribe', 'pro
     "id": 123,
     "timestamp": 1213232323232,
     "device_id": "323123123",
-    "payload": [
+    "values": [
         {
             "name": "temp",
             "value": 2343.2343,
@@ -59,16 +59,16 @@ A *type* of the message can be 'read', 'write', 'subscribe', 'unsubscribe', 'pro
     "id": 123,
     "timestamp": 1213232323232,
     "device_id": "323123123",
-    "payload": [
+    "values": [
         {
             "name": "high_temp",
             "value": true,
-            "ack": false
+            "ack": 1
         },
         {
             "name": "low_fuel",
-            "value": true,
-            "ack": true
+            "value": false,
+            "ack": 0
         }
     ]
 }
@@ -83,18 +83,18 @@ A *type* of the message can be 'read', 'write', 'subscribe', 'unsubscribe', 'pro
     "id": 123,
     "timestamp": 1213232323232,
     "device_id": "323123123",
-    "payload": [
+    "values": [
         {
             "name": "running",
-            "value": true
+            "value": 1
         },
         {
             "name": "communication",
-            "value": true
+            "value": 1
         },
         {
             "name": "ethernet",
-            "value": false
+            "value": 1
         }
     ]
 }
