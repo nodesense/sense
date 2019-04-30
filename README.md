@@ -50,6 +50,8 @@ A *type* of the message can be 'read', 'write', 'subscribe', 'unsubscribe', 'pro
 }
 ```
 
+'unit' is optional in above messages. 
+
 ## Alert
 
 
@@ -63,12 +65,14 @@ A *type* of the message can be 'read', 'write', 'subscribe', 'unsubscribe', 'pro
         {
             "name": "high_temp",
             "value": 1,
-            "ack": 1
+            "ack": 1,
+            "severity": 100
         },
         {
             "name": "low_limit",
             "value": 1,
-            "ack": 0
+            "ack": 0,
+             "severity": 45
         },
         {
             "name": "low_fuel",
@@ -78,6 +82,18 @@ A *type* of the message can be 'read', 'write', 'subscribe', 'unsubscribe', 'pro
     ]
 }
 ```
+
+'id' is an unique id of the message
+
+'timestamp' is the time when the message is generated at the soource, we trying to make it optional, but right now it is mandatory. 
+
+'name' - represent name of the alert, which is configurable in our platform
+
+'value' - should be number, either 0 or 1. This represent alert is active or not. when value is 1, alert is active, when value is 0, alert is inactive. 
+
+'ack' - should be number, either 0 or 1. This represent whether alert has been ackknowledged or not. When the value is 1, the alert has been acknowledged, when the value is 0, ther alert has not yet acknowledged. 
+
+'severity' - is an optional, should be number, decides importance of the alert, The higher the number, higher the importantance with other alerts. If the severity is not present, then we feed the database with value 0. [lowest important], this can be useful for upstream system to view the alerts in priority order like sorting. 
 
 ## Status
 
