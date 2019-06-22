@@ -40,7 +40,8 @@ A *type* of the message can be 'read', 'write', 'subscribe', 'unsubscribe', 'pro
         {
             "name": "temp",
             "value": 2343.2343,
-            "unit": 12
+            "unit": 12,
+            "timestamp": 1213232323232,
         },
         {
             "name": "humidity",
