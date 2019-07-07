@@ -46,6 +46,22 @@ A *type* of the message can be 'read', 'write', 'subscribe', 'unsubscribe', 'pro
     ]
 }
 ```
+
+```json
+{
+    "type": "discrete",
+    "id": 123,
+    "timestamp": 1213232323232,
+    "device_id": "323123123",
+    "values": [
+        {
+            "name": "reject1",
+            "value": 1,
+            "timestamp": 1213232323232,
+        }
+    ]
+}
+```
  
 ## Process
 
