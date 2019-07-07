@@ -28,6 +28,25 @@ A *type* of the message can be 'read', 'write', 'subscribe', 'unsubscribe', 'pro
 
 "payload" represent the information that has been send with the message, like the process values. Based on the "type" values, the values in the payload is categoried. if teh "type" is process, the "payload" contains process values.  
 
+
+## Discrete
+
+```json
+{
+    "type": "discrete",
+    "id": 123,
+    "timestamp": 1213232323232,
+    "device_id": "323123123",
+    "values": [
+        {
+            "name": "success",
+            "value": 1,
+            "timestamp": 1213232323232,
+        }
+    ]
+}
+```
+ 
 ## Process
 
 ```json
